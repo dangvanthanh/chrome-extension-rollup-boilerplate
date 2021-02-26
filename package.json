@@ -1,0 +1,36 @@
+{
+  "name": "chrome-extension-rollup-boilerplate",
+  "version": "1.0.0",
+  "description": "Chrome extension using Rollup.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangvanthanh/chrome-extension-rollup-boilerplate.git"
+  },
+  "keywords": [
+    "chrome-extension"
+  ],
+  "author": "Dang Van Thanh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangvanthanh/chrome-extension-rollup-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dangvanthanh/chrome-extension-rollup-boilerplate#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup-plugin-chrome-extension": "^3.5.3",
+    "rollup-plugin-esbuild": "^2.6.1",
+    "rollup-plugin-zip": "^1.0.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true
+  }
+}
