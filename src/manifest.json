@@ -3,12 +3,13 @@
   "description": "Chrome Extension Rollup Boilerplate",
   "version": "1.0",
   "manifest_version": 2,
-  "permissions": ["storage"],
+  "permissions": ["http://*/*", "https://*/*", "tabs", "storage"],
   "background": {
     "scripts": ["background/index.ts"],
     "persistent": false
   },
-  "page_action": {
+  "browser_action": {
+    "default_title": "Chrome Extension Rollup Boilerplate",
     "default_popup": "popup/index.html"
   },
   "options_page": "options/index.html"
