@@ -2,6 +2,7 @@ devDependencies:
   '@rollup/plugin-commonjs': 17.1.0
   '@rollup/plugin-node-resolve': 11.2.0
   rollup-plugin-chrome-extension: 3.5.3
+  rollup-plugin-empty-dir: 1.0.4
   rollup-plugin-esbuild: 2.6.1
   rollup-plugin-zip: 1.0.1
 lockfileVersion: 5.2
@@ -314,6 +315,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
+  /fs-extra/7.0.1:
+    dependencies:
+      graceful-fs: 4.2.6
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: true
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
   /fs-extra/8.1.0:
     dependencies:
       graceful-fs: 4.2.6
@@ -609,6 +620,14 @@ packages:
       node: '>=8.16.0'
     resolution:
       integrity: sha512-1xrYhLEPtycDdhT0/brhF0n8y3yLAEPlC//fvNopv/y74OxOJ9cme5rPqqwNrChz9hH5pk9+fKxNY1NqRVRqFw==
+  /rollup-plugin-empty-dir/1.0.4:
+    dependencies:
+      fs-extra: 7.0.1
+    dev: true
+    peerDependencies:
+      rollup: ^1.6.0
+    resolution:
+      integrity: sha512-aFtZmca23Y9n6Bl/q9GC+qPvnz5NUH0uoliIqAJvTaOyDOHvEsa1xFKb457hHSnc7Ks+Q+kIjpOOwrKAe50bUw==
   /rollup-plugin-esbuild/2.6.1:
     dependencies:
       '@rollup/pluginutils': 4.1.0
@@ -702,5 +721,6 @@ specifiers:
   '@rollup/plugin-commonjs': ^17.1.0
   '@rollup/plugin-node-resolve': ^11.2.0
   rollup-plugin-chrome-extension: ^3.5.3
+  rollup-plugin-empty-dir: ^1.0.4
   rollup-plugin-esbuild: ^2.6.1
   rollup-plugin-zip: ^1.0.1
